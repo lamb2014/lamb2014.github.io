@@ -84,19 +84,22 @@
 
 
 
-<meta name="description" content="之前已经看了一遍es6的文档,因为之前学习过其它语言,发现es6的新特性好多都是跟其它语言相似的,例如class,const,然后就没怎么太认真看,但在实际使用中却发现很多东西并不是很熟悉,于是只能认认真真的从头来过,这也让我得到了一个印象深刻的教训,不要凭自己的主观去想当然,在技术的世界里一定要严谨再严谨,好了闲话少述,进入正题。
-let基本用法   let和const是es6声明变量的新方法,">
+<meta name="description" content="变量的解构赋值数组的解构赋值在es5中，为变量赋值，只能直接指定值，如下所示123var a = 1;var b = 2;var c = 3;
+es6中可以这样写1var [a, b, c] = [1, 2, 3];
+上面代码中，数组对应位置，为变量赋值。只要等号两边的模式相同，左边的变量就会被赋予对应的值。例如可以嵌套数组解构1234let [foo, [[bar], baz]] = [1, [">
 <meta property="og:type" content="article">
-<meta property="og:title" content="es6的新特性(一)">
-<meta property="og:url" content="http://lamb2014.github.io/posts/33769/index.html">
+<meta property="og:title" content="es6的新特性(二)">
+<meta property="og:url" content="http://lamb2014.github.io/posts/17229/index.html">
 <meta property="og:site_name" content="羊羊羊的个人博客">
-<meta property="og:description" content="之前已经看了一遍es6的文档,因为之前学习过其它语言,发现es6的新特性好多都是跟其它语言相似的,例如class,const,然后就没怎么太认真看,但在实际使用中却发现很多东西并不是很熟悉,于是只能认认真真的从头来过,这也让我得到了一个印象深刻的教训,不要凭自己的主观去想当然,在技术的世界里一定要严谨再严谨,好了闲话少述,进入正题。
-let基本用法   let和const是es6声明变量的新方法,">
-<meta property="og:updated_time" content="2016-12-31T05:43:04.000Z">
+<meta property="og:description" content="变量的解构赋值数组的解构赋值在es5中，为变量赋值，只能直接指定值，如下所示123var a = 1;var b = 2;var c = 3;
+es6中可以这样写1var [a, b, c] = [1, 2, 3];
+上面代码中，数组对应位置，为变量赋值。只要等号两边的模式相同，左边的变量就会被赋予对应的值。例如可以嵌套数组解构1234let [foo, [[bar], baz]] = [1, [">
+<meta property="og:updated_time" content="2017-01-09T12:10:56.916Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="es6的新特性(一)">
-<meta name="twitter:description" content="之前已经看了一遍es6的文档,因为之前学习过其它语言,发现es6的新特性好多都是跟其它语言相似的,例如class,const,然后就没怎么太认真看,但在实际使用中却发现很多东西并不是很熟悉,于是只能认认真真的从头来过,这也让我得到了一个印象深刻的教训,不要凭自己的主观去想当然,在技术的世界里一定要严谨再严谨,好了闲话少述,进入正题。
-let基本用法   let和const是es6声明变量的新方法,">
+<meta name="twitter:title" content="es6的新特性(二)">
+<meta name="twitter:description" content="变量的解构赋值数组的解构赋值在es5中，为变量赋值，只能直接指定值，如下所示123var a = 1;var b = 2;var c = 3;
+es6中可以这样写1var [a, b, c] = [1, 2, 3];
+上面代码中，数组对应位置，为变量赋值。只要等号两边的模式相同，左边的变量就会被赋予对应的值。例如可以嵌套数组解构1234let [foo, [[bar], baz]] = [1, [">
 
 
 
@@ -124,13 +127,13 @@ let基本用法   let和const是es6声明变量的新方法,">
 
 
 
-  <link rel="canonical" href="http://lamb2014.github.io/posts/33769/"/>
+  <link rel="canonical" href="http://lamb2014.github.io/posts/17229/"/>
 
 
 
 
 
-  <title> es6的新特性(一) | 羊羊羊的个人博客 </title>
+  <title> es6的新特性(二) | 羊羊羊的个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -435,7 +438,7 @@ let基本用法   let和const是es6声明变量的新方法,">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://lamb2014.github.io/posts/33769/">
+  <link itemprop="mainEntityOfPage" href="http://lamb2014.github.io/posts/17229/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="lamb2014">
@@ -459,7 +462,7 @@ let基本用法   let和const是es6声明变量的新方法,">
             
             
               
-                es6的新特性(一)
+                es6的新特性(二)
               
             
           </h1>
@@ -472,8 +475,8 @@ let基本用法   let和const是es6声明变量的新方法,">
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-15T11:14:19+08:00">
-                2016-12-15
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-09T17:43:53+08:00">
+                2017-01-09
               </time>
             
 
@@ -506,8 +509,8 @@ let基本用法   let和const是es6声明变量的新方法,">
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/posts/33769/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="posts/33769/" itemprop="commentCount"></span>
+                <a href="/posts/17229/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="posts/17229/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -517,7 +520,7 @@ let基本用法   let和const是es6声明变量的新方法,">
 
           
           
-             <span id="/posts/33769/" class="leancloud_visitors" data-flag-title="es6的新特性(一)">
+             <span id="/posts/17229/" class="leancloud_visitors" data-flag-title="es6的新特性(二)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -542,21 +545,26 @@ let基本用法   let和const是es6声明变量的新方法,">
       
 
       
-        <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="https://music.163.com/outchain/player?type=2&id=25731320&auto=1&height=66"></iframe><br>之前已经看了一遍es6的文档,因为之前学习过其它语言,发现es6的新特性好多都是跟其它语言相似的,例如class,const,然后就没怎么太认真看,但在实际使用中却发现很多东西并不是很熟悉,于是只能认认真真的从头来过,这也让我得到了一个印象深刻的教训,不要凭自己的主观去想当然,在技术的世界里一定要严谨再严谨,好了闲话少述,进入正题。</p>
-<h2 id="let"><a href="#let" class="headerlink" title="let"></a>let</h2><h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p>   let和const是es6声明变量的新方法,众所周知,es5申明变量是通过var,var的一大缺点就是没有局部作用域,经常会出现意想不到的错误,es6就顺势推出了let.<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"> &#123;</div><div class="line"> <span class="keyword">let</span> a = <span class="number">10</span>;</div><div class="line"> <span class="keyword">var</span> b = <span class="number">1</span>;</div><div class="line"> &#125;</div><div class="line"></div><div class="line">a <span class="comment">// ReferenceError: a is not defined.</span></div><div class="line">b <span class="comment">// 1</span></div></pre></td></tr></table></figure></p>
-<p> 上面代码在代码块之中，分别用let和var声明了两个变量。然后在代码块之外调用这两个变量，结果let声明的变量报错，var声明的变量返回了正确的值。这表明，let声明的变量只在它所在的代码块有效。<br> 再看一个例子<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = [];</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</div><div class="line">  a[i] = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(i);</div><div class="line">  &#125;;</div><div class="line">&#125;</div><div class="line">a[<span class="number">6</span>](); <span class="comment">// 10</span></div></pre></td></tr></table></figure></p>
-<p>这个例子中变量i是var声明的，在全局范围内都有效。所以每一次循环，新的i值都会覆盖旧值，导致最后输出的是最后一轮的i的值,也就是10。</p>
-<p>将var改成let<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = [];</div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</div><div class="line">  a[i] = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(i);</div><div class="line">  &#125;;</div><div class="line">&#125;</div><div class="line">a[<span class="number">6</span>](); <span class="comment">// 6</span></div></pre></td></tr></table></figure></p>
-<p>上面代码中，变量i是let声明的，当前的i只在本轮循环有效，所以每一次循环的i其实都是一个新的变量，所以最后输出的是6。</p>
-<h3 id="暂时性死区"><a href="#暂时性死区" class="headerlink" title="暂时性死区"></a>暂时性死区</h3><p>块级作用域内存在let命令，它所声明的变量就“绑定”（binding）这个区域，不再受外部的影响。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> tmp = <span class="number">123</span>;</div><div class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</div><div class="line">  tmp = <span class="string">'abc'</span>; <span class="comment">// ReferenceError</span></div><div class="line">  <span class="keyword">let</span> tmp;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>上面代码中，存在全局变量tmp，但是块级作用域内let又声明了一个局部变量tmp，导致后者绑定这个块级作用域，所以在let声明变量前，对tmp赋值会报错.在es6中如果区块中存在let和const命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。在代码块内，使用let命令声明变量之前，该变量都是不可用的。这在语法上，称为“暂时性死区”（temporal dead zone，简称TDZ）。ES6规定暂时性死区和let、const语句不出现变量提升，主要是为了减少运行时错误，防止在变量声明前就使用这个变量，从而导致意料之外的行为。</p>
-<h3 id="不允许重复声明"><a href="#不允许重复声明" class="headerlink" title="不允许重复声明"></a>不允许重复声明</h3><p>let不允许在相同作用域内，重复声明同一个变量。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 报错</span></div><div class="line"><span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">let</span> a = <span class="number">10</span>;</div><div class="line">  <span class="keyword">var</span> a = <span class="number">1</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 报错</span></div><div class="line"><span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">let</span> a = <span class="number">10</span>;</div><div class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<h3 id="do表达式"><a href="#do表达式" class="headerlink" title="do表达式"></a>do表达式</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="keyword">let</span> t = f();</div><div class="line">  t = t * t + <span class="number">1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>上面代码中，块级作用域将两个语句封装在一起。但是，在块级作用域以外，没有办法得到t的值，因为块级作用域不返回值，除非t是全局变量。那么怎么得到块级作用域的返回值呢?办法就是在块级作用域之前加上do，使它变为do表达式。代码如下:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="keyword">let</span> t = f();</div><div class="line">  t = t * t + <span class="number">1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<h2 id="const"><a href="#const" class="headerlink" title="const"></a>const</h2><p>const声明一个只读的常量。一旦声明，常量的值就不能改变。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> PI = <span class="number">3.1415</span>;</div><div class="line">PI <span class="comment">// 3.1415</span></div><div class="line"></div><div class="line">PI = <span class="number">3</span>;</div><div class="line"><span class="comment">// TypeError: Assignment to constant variable.</span></div></pre></td></tr></table></figure></p>
-<p>上面代码表明改变常量的值会报错。<br>const声明的变量不得改变值，这意味着，const一旦声明变量，就必须立即初始化，不能留到以后赋值。同时const的作用域与let命令相同：只在声明所在的块级作用域内有效，声明的常量也是不提升，同样存在暂时性死区，只能在声明的位置后面使用,也一样不可重复声明。<br>对于复合类型的变量，变量名不指向数据，而是指向数据所在的地址。const命令只是保证变量名指向的地址不变，并不保证该地址的数据不变，所以将一个对象声明为常量必须非常小心。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> foo = &#123;&#125;;</div><div class="line">foo.prop = <span class="number">123</span>;</div><div class="line"></div><div class="line">foo.prop</div><div class="line"><span class="comment">// 123</span></div><div class="line"></div><div class="line">foo = &#123;&#125;; <span class="comment">// TypeError: "foo" is read-only</span></div></pre></td></tr></table></figure></p>
-<p>这段代码中常量foo储存的是一个地址，这个地址指向一个对象。不可变的只是这个地址，即不能把foo指向另一个地址，但对象本身是可变的，所以依然可以为其添加新属性。</p>
-<hr>
+        <h2 id="变量的解构赋值"><a href="#变量的解构赋值" class="headerlink" title="变量的解构赋值"></a>变量的解构赋值</h2><h3 id="数组的解构赋值"><a href="#数组的解构赋值" class="headerlink" title="数组的解构赋值"></a>数组的解构赋值</h3><p>在es5中，为变量赋值，只能直接指定值，如下所示<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</div><div class="line"><span class="keyword">var</span> b = <span class="number">2</span>;</div><div class="line"><span class="keyword">var</span> c = <span class="number">3</span>;</div></pre></td></tr></table></figure></p>
+<p>es6中可以这样写<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</div></pre></td></tr></table></figure></p>
+<p>上面代码中，数组对应位置，为变量赋值。只要等号两边的模式相同，左边的变量就会被赋予对应的值。例如可以嵌套数组解构<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> [foo, [[bar], baz]] = [<span class="number">1</span>, [[<span class="number">2</span>], <span class="number">3</span>]];</div><div class="line">foo <span class="comment">// 1</span></div><div class="line">bar <span class="comment">// 2</span></div><div class="line">baz <span class="comment">// 3</span></div></pre></td></tr></table></figure></p>
+<p>根据数组的属性还可以这样写<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> [ , , z] = [<span class="string">"html"</span>, <span class="string">"css"</span>, <span class="string">"js"</span>];</div><div class="line">z <span class="comment">// "js"</span></div></pre></td></tr></table></figure></p>
+<p>当然如果解构不成功，变量的值就是undefined<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> [foo] = [];</div><div class="line"><span class="keyword">var</span> [bar, foo] = [<span class="number">1</span>];</div><div class="line">foo <span class="comment">//undefined</span></div></pre></td></tr></table></figure></p>
+<p>上面是等号右边值数量小于左边，看一下另一种情况<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> [x, y] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</div><div class="line">x <span class="comment">// 1</span></div><div class="line">y <span class="comment">// 2</span></div></pre></td></tr></table></figure></p>
+<p>如上所示，这种情况下是可以解构成功，在es6中被称作不完全解构<br>如果等号的右边不是数组将会报错<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 报错</span></div><div class="line"><span class="keyword">let</span> [foo] = <span class="number">1</span>;</div><div class="line"><span class="keyword">let</span> [foo] = <span class="literal">false</span>;</div><div class="line"><span class="keyword">let</span> [foo] = <span class="literal">NaN</span>;</div><div class="line"><span class="keyword">let</span> [foo] = <span class="literal">undefined</span>;</div><div class="line"><span class="keyword">let</span> [foo] = <span class="literal">null</span>;</div><div class="line"><span class="keyword">let</span> [foo] = &#123;&#125;;</div></pre></td></tr></table></figure></p>
+<p>解构赋值不仅适用于var命令，也适用于es6新加的let和const命令。<br>解构赋值允许指定默认值。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> [ x=<span class="string">'html'</span>] = [];</div><div class="line">x <span class="comment">// html</span></div></pre></td></tr></table></figure></p>
+<h3 id="对象的解构赋值"><a href="#对象的解构赋值" class="headerlink" title="对象的解构赋值"></a>对象的解构赋值</h3><p>对象的解构与数组有不同，数组的元素是按次序排列的，变量的取值由它的位置决定；而对象的属性没有次序，变量必须与属性同名，才能取到正确的值。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> &#123; bar, foo &#125; = &#123; <span class="attr">foo</span>: <span class="string">"aaa"</span>, <span class="attr">bar</span>: <span class="string">"bbb"</span> &#125;;</div><div class="line">foo <span class="comment">// "aaa"</span></div><div class="line">bar <span class="comment">// "bbb"</span></div><div class="line"><span class="keyword">var</span> &#123; baz &#125; = &#123; <span class="attr">foo</span>: <span class="string">"aaa"</span>, <span class="attr">bar</span>: <span class="string">"bbb"</span> &#125;;</div><div class="line">baz <span class="comment">// undefined</span></div></pre></td></tr></table></figure></p>
+<p>上例中等号左边的两个变量的次序，与等号右边两个同名属性的次序不一致，但是对取值完全没有影响。第二个例子的变量没有对应的同名属性，导致取不到值，最后等于undefined。<br>如果变量名与属性名不一致，必须写成下面这样。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> obj = &#123; <span class="attr">first</span>: <span class="string">'hello'</span>, <span class="attr">last</span>: <span class="string">'world'</span> &#125;;</div><div class="line"><span class="keyword">let</span> &#123; <span class="attr">first</span>: f, <span class="attr">last</span>: l &#125; = obj;</div><div class="line">f <span class="comment">// 'hello'</span></div><div class="line">l <span class="comment">// 'world'</span></div></pre></td></tr></table></figure></p>
+<p>在es6的对象解构赋值中，变量的声明和赋值是一体的。对于let和const来说，变量不能重新声明，所以一旦赋值的变量以前声明过，就会报错。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> foo;</div><div class="line"><span class="keyword">let</span> &#123;foo&#125; = &#123;<span class="attr">foo</span>: <span class="number">1</span>&#125;; <span class="comment">// SyntaxError: Duplicate declaration "foo"</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> baz;</div><div class="line"><span class="keyword">let</span> &#123;<span class="attr">bar</span>: baz&#125; = &#123;<span class="attr">bar</span>: <span class="number">1</span>&#125;; <span class="comment">// SyntaxError: Duplicate declaration "baz"</span></div></pre></td></tr></table></figure></p>
+<p>上例中，解构赋值的变量都会重新声明，所以报错了。不过，因为var命令允许重新声明，所以这个错误只会在使用let和const命令时出现。如果没有第二个let命令，上面的代码就不会报错。<br>注意，用这种方式必须加上小括号，因为解析器会将起首的大括号，理解成一个代码块，而不是赋值语句。如下所示<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> foo;</div><div class="line">(&#123;foo&#125; = &#123;<span class="attr">foo</span>: <span class="number">1</span>&#125;); <span class="comment">// 成功</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> baz;</div><div class="line">(&#123;<span class="attr">bar</span>: baz&#125; = &#123;<span class="attr">bar</span>: <span class="number">1</span>&#125;); <span class="comment">// 成功</span></div></pre></td></tr></table></figure></p>
+<p>和数组一样，解构也可以用于嵌套结构的对象。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> obj = &#123;&#125;;</div><div class="line"><span class="keyword">let</span> arr = [];</div><div class="line"></div><div class="line">(&#123; <span class="attr">foo</span>: obj.prop, <span class="attr">bar</span>: arr[<span class="number">0</span>] &#125; = &#123; <span class="attr">foo</span>: <span class="number">123</span>, <span class="attr">bar</span>: <span class="literal">true</span> &#125;);</div><div class="line"></div><div class="line">obj <span class="comment">// &#123;prop:123&#125;</span></div><div class="line">arr <span class="comment">// [true]</span></div><div class="line">y <span class="comment">// "World"</span></div></pre></td></tr></table></figure></p>
+<p>对象的解构也可以指定默认值。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> &#123;x = <span class="number">3</span>&#125; = &#123;&#125;;</div><div class="line">x <span class="comment">// 3</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> &#123;x, y = <span class="number">5</span>&#125; = &#123;<span class="attr">x</span>: <span class="number">1</span>&#125;;</div><div class="line">x <span class="comment">// 1</span></div><div class="line">y <span class="comment">// 5</span></div></pre></td></tr></table></figure></p>
+<h3 id="字符串的解构赋值"><a href="#字符串的解构赋值" class="headerlink" title="字符串的解构赋值"></a>字符串的解构赋值</h3><p>字符串也可以解构赋值。这是因为，字符串被转换成了一个类似数组的对象。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> [a, b, c, d, e] = <span class="string">'hello'</span>;</div><div class="line">a <span class="comment">// "h"</span></div><div class="line">b <span class="comment">// "e"</span></div><div class="line">c <span class="comment">// "l"</span></div><div class="line">d <span class="comment">// "l"</span></div><div class="line">e <span class="comment">// "o"</span></div></pre></td></tr></table></figure></p>
+<h3 id="函数参数的解构赋值"><a href="#函数参数的解构赋值" class="headerlink" title="函数参数的解构赋值"></a>函数参数的解构赋值</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">[x, y]</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> x + y;</div><div class="line">&#125;</div><div class="line">add([<span class="number">1</span>, <span class="number">2</span>]); <span class="comment">// 3</span></div></pre></td></tr></table></figure>
+<p>上例中函数add的参数是一个数组，传参时数组参数就被解构成变量x和y。<br>函数参数的解构也可以使用默认值。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">move</span>(<span class="params">&#123;x = <span class="number">0</span>, y = <span class="number">0</span>&#125; = &#123;&#125;</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> [x, y];</div><div class="line">&#125;</div><div class="line"></div><div class="line">move(&#123;<span class="attr">x</span>: <span class="number">3</span>, <span class="attr">y</span>: <span class="number">8</span>&#125;); <span class="comment">// [3, 8]</span></div><div class="line">move(&#123;<span class="attr">x</span>: <span class="number">3</span>&#125;); <span class="comment">// [3, 0]</span></div><div class="line">move(&#123;&#125;); <span class="comment">// [0, 0]</span></div><div class="line">move(); <span class="comment">// [0, 0]</span></div></pre></td></tr></table></figure></p>
+<h3 id="解构赋值的用途"><a href="#解构赋值的用途" class="headerlink" title="解构赋值的用途"></a>解构赋值的用途</h3><h4 id="交换变量的值"><a href="#交换变量的值" class="headerlink" title="交换变量的值"></a>交换变量的值</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[x, y] = [y, x];</div></pre></td></tr></table></figure>
+<h4 id="从函数返回多个值"><a href="#从函数返回多个值" class="headerlink" title="从函数返回多个值"></a>从函数返回多个值</h4><p>函数只能返回一个值，如果要返回多个值，只能将它们放在数组或对象里返回。有了解构赋值，取出这些值就非常方便。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">box</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> [a, b, c] = box();</div><div class="line"></div><div class="line"><span class="comment">// 返回一个对象</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">box</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> &#123;</div><div class="line">    <span class="attr">foo</span>: <span class="number">1</span>,</div><div class="line">    <span class="attr">bar</span>: <span class="number">2</span></div><div class="line">  &#125;;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> &#123; foo, bar &#125; = box();</div></pre></td></tr></table></figure></p>
+<h4 id="提取JSON数据"><a href="#提取JSON数据" class="headerlink" title="提取JSON数据"></a>提取JSON数据</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> jsonData = &#123;</div><div class="line">  <span class="attr">id</span>: <span class="number">42</span>,</div><div class="line">  <span class="attr">status</span>: <span class="string">"OK"</span>,</div><div class="line">  <span class="attr">data</span>: [<span class="number">867</span>, <span class="number">5309</span>]</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">let</span> &#123; id, status, <span class="attr">data</span>: number &#125; = jsonData;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(id, status, number);</div><div class="line"><span class="comment">// 42, "OK", [867, 5309]</span></div></pre></td></tr></table></figure>
 
       
     </div>
@@ -589,8 +597,8 @@ let基本用法   let和const是es6声明变量的新方法,">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/posts/53204/" rel="next" title="终于搭好了自己的个人博客">
-                <i class="fa fa-chevron-left"></i> 终于搭好了自己的个人博客
+              <a href="/posts/49667/" rel="next" title="vue学习(一)">
+                <i class="fa fa-chevron-left"></i> vue学习(一)
               </a>
             
           </div>
@@ -599,8 +607,8 @@ let基本用法   let和const是es6声明变量的新方法,">
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/posts/49667/" rel="prev" title="vue学习(一)">
-                vue学习(一) <i class="fa fa-chevron-right"></i>
+              <a href="/posts/54255/" rel="prev" title="es6的新特性(三)">
+                es6的新特性(三) <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -616,10 +624,10 @@ let基本用法   let和const是es6声明变量的新方法,">
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="posts/33769/"
-     data-title="es6的新特性(一)"
+        <div class="ds-share flat" data-thread-key="posts/17229/"
+     data-title="es6的新特性(二)"
      data-content=""
-     data-url="http://lamb2014.github.io/posts/33769/">
+     data-url="http://lamb2014.github.io/posts/17229/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -646,8 +654,8 @@ let基本用法   let和const是es6声明变量的新方法,">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="posts/33769/"
-           data-title="es6的新特性(一)" data-url="http://lamb2014.github.io/posts/33769/">
+      <div class="ds-thread" data-thread-key="posts/17229/"
+           data-title="es6的新特性(二)" data-url="http://lamb2014.github.io/posts/17229/">
       </div>
     
   </div>
@@ -744,7 +752,7 @@ let基本用法   let和const是es6声明变量的新方法,">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#let"><span class="nav-number">1.</span> <span class="nav-text">let</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本用法"><span class="nav-number">1.1.</span> <span class="nav-text">基本用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#暂时性死区"><span class="nav-number">1.2.</span> <span class="nav-text">暂时性死区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不允许重复声明"><span class="nav-number">1.3.</span> <span class="nav-text">不允许重复声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#do表达式"><span class="nav-number">1.4.</span> <span class="nav-text">do表达式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#const"><span class="nav-number">2.</span> <span class="nav-text">const</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#变量的解构赋值"><span class="nav-number">1.</span> <span class="nav-text">变量的解构赋值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数组的解构赋值"><span class="nav-number">1.1.</span> <span class="nav-text">数组的解构赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象的解构赋值"><span class="nav-number">1.2.</span> <span class="nav-text">对象的解构赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串的解构赋值"><span class="nav-number">1.3.</span> <span class="nav-text">字符串的解构赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数参数的解构赋值"><span class="nav-number">1.4.</span> <span class="nav-text">函数参数的解构赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解构赋值的用途"><span class="nav-number">1.5.</span> <span class="nav-text">解构赋值的用途</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#交换变量的值"><span class="nav-number">1.5.1.</span> <span class="nav-text">交换变量的值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从函数返回多个值"><span class="nav-number">1.5.2.</span> <span class="nav-text">从函数返回多个值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#提取JSON数据"><span class="nav-number">1.5.3.</span> <span class="nav-text">提取JSON数据</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
